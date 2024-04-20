@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         // ---------- Ejercicio 1 ----------
         int numero = 1;
         do {
@@ -71,18 +72,19 @@ public class Main {
 
         // ---------- Ejercicio 4 ----------
 
-        int primero = 0;
-        int segundo = 1;
+        Scanner sc = new Scanner(System.in);
+        int n_anterior = 0;
+        int n_actual = 1;
 
         System.out.println("Ingresa un número");
         int numero = sc.nextInt();
 
         for (int i = 0; i <= numero; i++) {
-            System.out.print(primero + " ");
+            System.out.print(n_anterior + " ");
 
-            int siguiente = primero + segundo;
-            primero = segundo;
-            segundo = siguiente;
+            int n_siguiente = n_anterior + n_actual;
+            n_anterior = n_actual;
+            n_actual = n_siguiente;
         }
         */
     }
